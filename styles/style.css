@@ -1,0 +1,133 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  background-color: #EFF3F9;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.wrapper {
+  background-color: #D5D5D5;
+  border: 3px solid black;
+  border-radius: 20px;
+  min-height: 60vh;
+  height: 100%;
+  padding: 20px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header__button, .header__input, ul li{
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+
+.header__button {
+  background-color: #18E7CF;
+  width: 20%;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: #00ffe1;
+  transition: 0.3s;
+}
+
+.header__input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__input:hover {
+  background-color: #efeded;
+  transition: 0.3s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  background-color: #D5D5D5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+ul li:hover {
+  background-color: #e0dfdf;
+  transition: 0.3s;
+}
+
+ul li.checked {
+  background-color: #929292;
+  transition: 0.3s;
+}
+
+ul li.checked .todo_item_text {
+  text-decoration: line-through;
+  transition: 0.3s;
+}
+
+.todo_item_checkbox, .todo_item_remove {
+  width: 45px;
+  height: 35px;
+  background-color: #18E7CF;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.todo_item_text {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  text-align: center;
+  color: #5E5E5E;
+}
+
+.todo_item_removedate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.todo_item_remove{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.todo_item_remove:hover {
+  background-color: #00ffe1;
+  transition: 0.3s;
+}
+
+.todo_item_date {
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 0px;
+  font-size: 11px;
+}
+
+.todo_item_checkbox {
+  cursor: pointer;
+}
+
+.todo_item_checkbox:hover {
+  background-color: #EFF3F9;
+}
+
